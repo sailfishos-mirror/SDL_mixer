@@ -28,7 +28,7 @@ Previous Unix maintainers
   for MikMod.
 * Peter Amstutz <tetron@student.umass.edu>
   maintained MikMod'Unix version 3 up to version 3.0.3.
-  
+
 General contributors
 --------------------
 
@@ -37,7 +37,7 @@ General contributors
 * Shlomi Fish <shlomif@shlomifish.org>
   wrote the Java port, bug fixes.
 * Ozkan Sezer <sezero@users.sourceforge.net>
-  overall bug fixes, configury updates.
+  overall bug fixes, build system fixes/updates.
 * Juan Linietsky <coding@reduz.com.ar>
   overall bug fixes.
 * Claudio Matsuoka <claudio@helllabs.org>
@@ -48,12 +48,12 @@ General contributors
   wrote the OKT loader.
 * Kev Vance <kvance@zeux.org>
   wrote the GDM loader.
-
 * Paul Fisher made decisive contributions and improvements.
 * Alexander Kerkhove fixed an ULT panning effect bug.
 * ``Kodiak'' helped on the interfaces of libmikmod.
 * Sylvain Marchand make MikMod more portable and GCC compilable.
-
+* Alice Rowan contributed DSMI AMF, FAR, GDM, IT, STM, and many
+  other loader fixes.
 
 Contributors on the Unix side
 -----------------------------

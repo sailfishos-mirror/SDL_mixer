@@ -29,7 +29,7 @@ File: mikmod.info,  Node: Top,  Next: Introduction,  Prev: (dir),  Up: (dir)
 MikMod Sound Library
 ********************
 
-This manual documents the MikMod Sound Library, version 3.1.23.
+This manual documents the MikMod Sound Library, version 3.1.24.
 
 * Menu:
 
@@ -3128,7 +3128,7 @@ not have access to the hardware. Network drivers only support software
 mixing.
 
 `drv_AF'
-     This driver works with the "Digital AudioFile" library.
+     This driver works with the archaic "Digital AudioFile" library.
      Start the server on the machine you want, set its hostname in the
      `AUDIOFILE' environment variable, and MikMod is ready to send it
      sound.
@@ -3452,11 +3452,11 @@ Node: Module Loaders92829
 Node: Sample Loaders99302
 Node: Driver Reference99600
 Node: Network Drivers99853
-Node: Hardware Drivers100755
-Node: Disk Writer Drivers103500
-Node: Other Drivers104148
-Node: Index105188
-Node: Function Index105356
-Node: Type and Variable Index112562
+Node: Hardware Drivers100763
+Node: Disk Writer Drivers103508
+Node: Other Drivers104156
+Node: Index105196
+Node: Function Index105364
+Node: Type and Variable Index112570
 
 End Tag Table

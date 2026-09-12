@@ -1,7 +1,7 @@
   Hello folks !
 
 
-This is libmikmod, version 3.1.23, a portable sound library for Unix.
+This is libmikmod, version 3.1.24, a portable sound library for Unix.
 Check out the file 'NEWS' for more history information.
 
 
@@ -29,7 +29,7 @@ on an HPFS drive, or an ext2fs drive, or a network drive where you can
 use decent-size filenames.
 
 For EMX, run:
-    make -f Makefile.emx dll
+    make -f Makefile.emx
 
 For Watcom, run:
     wmake -f Makefile.wat

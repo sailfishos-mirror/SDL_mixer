@@ -173,9 +173,6 @@
 /* Define to 1 if you have the <windows.h> header file. */
 #undef HAVE_WINDOWS_H
 
-/* Define to the sub-directory where libtool stores uninstalled libraries. */
-#undef LT_OBJDIR
-
 /* Define if you want a debug version of the library */
 #undef MIKMOD_DEBUG
 

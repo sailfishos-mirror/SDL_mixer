@@ -2,10 +2,10 @@ dnl Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.63])
 
-AC_INIT([libmikmod],[3.1.23])
+AC_INIT([libmikmod],[3.1.24])
 LIBMIKMOD_MAJOR_VERSION=3
 LIBMIKMOD_MINOR_VERSION=1
-LIBMIKMOD_MICRO_VERSION=23
+LIBMIKMOD_MICRO_VERSION=24
 LIBMIKMOD_VERSION=$LIBMIKMOD_MAJOR_VERSION.$LIBMIKMOD_MINOR_VERSION.$LIBMIKMOD_MICRO_VERSION
 
 AC_CONFIG_AUX_DIR([autotools])
@@ -57,7 +57,7 @@ case $host_os in
 	darwin*) libmikmod_darwin=yes ;;
 	netbsd*) libmikmod_netbsd=yes ;;
 	openbsd*) libmikmod_openbsd=yes ;;
-	emx*) libmikmod_os2=yes ;;
+	os2*) libmikmod_os2=yes ;;
 	*djgpp) libmikmod_djgpp=yes ;;
 	amigaos*|aros*|morphos*)
 		libmikmod_amiga=yes ;;
@@ -231,7 +231,7 @@ else
 fi])
 
 case $host_os in
-  mingw*|emx*|*djgpp|amigaos*|aros*|morphos*)
+  mingw*|os2*|*djgpp|amigaos*|aros*|morphos*)
      libmikmod_driver_oss=no
      libmikmod_driver_esd=no
      libmikmod_driver_af=no
@@ -533,6 +533,8 @@ case $host_os in
 		libmikmod_driver_ds=no
 		AC_CHECK_HEADERS([dsound.h],[libmikmod_driver_ds=yes],[],[#include <windows.h>])
 	fi
+	# link statically to libgcc:
+	CFLAGS="$CFLAGS -static-libgcc"
 	;;
 
  *)	libmikmod_driver_win=no
@@ -543,7 +545,7 @@ esac
 # OS/2 audio
 # ---------------------
 case $host_os in
- emx*)
+ os2*)
 	# do an os2.h check, just in case..
 	AC_CHECK_HEADERS([os2.h],,[AC_MSG_ERROR([Targeting OS/2, but os2.h not available])])
 	;;
@@ -918,7 +920,7 @@ int bar(void) { return 1; }],
 # supposed to fail the above check. (I'm adding the manual test
 # below nonetheless, just in case.)
 case $host_os in
-   mingw*|cygwin*|emx*|*djgpp|amigaos*|aros*|morphos*)
+   mingw*|cygwin*|os2*|*djgpp|amigaos*|aros*|morphos*)
 	libmikmod_cv_gcc_visibility=no
 	;;
 esac
